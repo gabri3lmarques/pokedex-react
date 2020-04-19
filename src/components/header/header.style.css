@@ -1,0 +1,65 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  background-image: url(../../assets/img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header > .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+}
+
+.header > .container > .left-col {
+  display: grid;
+  align-items: center;
+  height: 80px;
+}
+
+.header > .container > .right-col {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header > .container > .right-col > button {
+  border: 2px solid #ccc;
+  padding: 5px;
+  width: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  transition: 400ms;
+  background-color: #f3f3f3;
+  margin-left: 5px;
+  transition: 300ms;
+}
+
+.header > .container > .right-col > button:hover {
+  background-color: #ffd86f;
+  border-color: #6c79db;
+}
+
+.header > .container > .right-col > button:active {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    background-image: none;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .header > .container {
+    grid-template-columns: 1fr;
+  }
+}

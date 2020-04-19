@@ -1,0 +1,57 @@
+.card {
+  padding: 20px;
+  background-color: #e1e1e1;
+  border-radius: 10px;
+  background-image: url(../../assets/img/bg.png);
+  background-position: 150px 150px;
+  background-repeat: no-repeat;
+}
+
+.card.grass {
+  background-color: #48d0b0;
+}
+
+.card.fire {
+  background-color: #fb6c6c;
+}
+
+.card.water {
+  background-color: #76bdfe;
+}
+
+.card.eletric {
+  background-color: #ffd86f;
+}
+
+.card.ground {
+  background-color: #eaab7e;
+}
+
+.card.bug,
+.card.poison {
+  background-color: #6c79db;
+}
+
+.card .number {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card .name {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.card .image-detalis {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.card .image img {
+  max-width: 100%;
+  padding: 10px;
+}

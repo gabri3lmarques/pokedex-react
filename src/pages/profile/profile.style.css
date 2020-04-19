@@ -1,0 +1,127 @@
+.profile {
+  padding-top: 40px;
+  background-color: #e1e1e1;
+}
+
+.profile.grass {
+  background-color: #48d0b0;
+}
+
+.profile.fire {
+  background-color: #fb6c6c;
+}
+
+.profile.water {
+  background-color: #76bdfe;
+}
+
+.profile.eletric {
+  background-color: #ffd86f;
+}
+
+.profile.ground {
+  background-color: #eaab7e;
+}
+
+.profile.bug,
+.profile.poison {
+  background-color: #6c79db;
+}
+
+.profile > .container > .name {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.profile > .container > .number {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.profile > .container > .types {
+  margin-top: 15px;
+}
+
+.profile > .container > .types > span {
+  display: inline-block;
+  padding: 4px 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.profile > .container > .image img {
+  max-width: 100%;
+}
+
+.profile > .sub-section {
+  margin-top: -80px;
+  background-color: #ffffff;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.profile > .sub-section > .container p {
+  font-size: 20px;
+}
+
+.profile > .sub-section > .container > .row {
+  border-bottom: 2px dashed #ccc;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  background-image: url(../../assets/img/pokeball.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 40px;
+}
+
+.profile .card {
+  border: 2px solid #ccc;
+  background-color: #f3f3f3;
+  background-image: none;
+}
+
+.profile .card-header {
+  background-color: #f3f3f3;
+  border: 0;
+}
+
+.profile .card-header button {
+  border: 0;
+  background-color: #f3f3f3;
+  font-size: 28px;
+  font-style: italic;
+  background-image: url(../../assets/img/pokeball.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+.profile .card-header button:hover {
+  color: #6c79db;
+}
+
+.profile .card-body > .genders > span {
+  margin-right: 5px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.profile .card-body > .genders > span.female {
+  background-image: url(../../assets/img/female.png);
+}
+
+.profile .card-body > .genders > span.male {
+  background-image: url(../../assets/img/male.png);
+}

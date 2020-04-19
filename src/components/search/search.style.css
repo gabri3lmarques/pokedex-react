@@ -1,0 +1,18 @@
+.search {
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  transition: 400ms;
+  background-image: url(../../assets/img/search.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.search:focus {
+  outline: 0;
+  border-color: #6c79db;
+  color: #6c79db;
+}
