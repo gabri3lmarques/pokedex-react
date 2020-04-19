@@ -5,31 +5,44 @@
 
 .profile.grass {
   background-color: #48d0b0;
+  background-image: url(../../assets/img/grass.png);
 }
 
 .profile.fire {
   background-color: #fb6c6c;
+  background-image: url(../../assets/img/fire.png);
 }
 
 .profile.water {
   background-color: #76bdfe;
+  background-image: url(../../assets/img/water.png);
 }
 
 .profile.eletric {
   background-color: #ffd86f;
+  background-image: url(../../assets/img/eletric.png);
+}
+
+.profile.normal {
+  background-image: url(../../assets/img/normal.png);
 }
 
 .profile.ground {
   background-color: #eaab7e;
+  background-image: url(../../assets/img/ground.png);
 }
 
-.profile.bug,
+.profile.bug {
+  background-color: #6c79db;
+  background-image: url(../../assets/img/bug.png);
+}
 .profile.poison {
   background-color: #6c79db;
+  background-image: url(../../assets/img/poison.png);
 }
 
 .profile > .container > .name {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 30px;
   font-weight: 700;
   font-style: italic;
@@ -37,7 +50,7 @@
 }
 
 .profile > .container > .number {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 30px;
   font-weight: 700;
   font-style: italic;
@@ -52,7 +65,8 @@
   display: inline-block;
   padding: 4px 20px;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.5);
   font-size: 18px;
   margin-right: 10px;
