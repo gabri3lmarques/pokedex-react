@@ -130,7 +130,7 @@ class Profile extends React.Component {
                 </Card.Header>
                 <Accordion.Collapse eventKey="3">
                   <Card.Body>
-                    <p>{pokemon.height} m</p>
+                    <p>{pokemon.height}</p>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -146,7 +146,7 @@ class Profile extends React.Component {
                 </Card.Header>
                 <Accordion.Collapse eventKey="4">
                   <Card.Body>
-                    <p>{pokemon.weight} kg</p>
+                    <p>{pokemon.weight}</p>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
