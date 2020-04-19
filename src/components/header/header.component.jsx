@@ -1,6 +1,5 @@
 import React from "react";
 import Search from "../search/search.component";
-import Button from "../button/button.component";
 import "./header.style.css";
 
 const Header = (props) => {
