@@ -17,6 +17,10 @@ html {
   background-repeat: no-repeat;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 button:focus {
   outline: 0;
 }
