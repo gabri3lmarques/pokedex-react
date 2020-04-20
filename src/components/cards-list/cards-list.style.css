@@ -4,6 +4,7 @@
   grid-gap: 1em;
   justify-items: stretch;
   padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -15,6 +16,12 @@
 @media only screen and (max-width: 992px) {
   .cards-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cards-list {
+    padding-top: 160px;
   }
 }
 

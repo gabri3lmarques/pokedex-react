@@ -1,4 +1,5 @@
 import React from "react";
+import { URI } from "../../env";
 import { Link } from "react-router-dom";
 import Button from "../../components/button/button.component";
 import Accordion from "react-bootstrap/Accordion";
@@ -17,9 +18,7 @@ class Profile extends React.Component {
 
   // faz a chamada que busca os dados individual de um determinao pokemon
   componentDidMount() {
-    fetch(
-      `https://gabri3lmarques.github.io/pokemon/files/${this.props.match.params.number}/data.json`
-    )
+    fetch(`${URI}${this.props.match.params.number}/data.json`)
       .then((response) => response.json())
       .then((response) => this.setState({ pokemon: response }));
   }
