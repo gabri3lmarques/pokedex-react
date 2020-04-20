@@ -2,7 +2,7 @@
 
 O projeto foi feito utilizando o framework React.
 É um requisito para rodar o projeto ter o Node.js instalado localmente.
-Também é necessário ter o node package manager, NPM, pra baixar as dependencias do projeto.
+Também é necessário ter o node package manager, NPM, pra baixar as dependências do projeto.
 
 pode ser baiaxado aqui: [https://nodejs.org/en/]
 
@@ -20,7 +20,7 @@ Para buildar o projeto:
 
 <code>npm run build</code>
 
-Lodo após, os seguintes comandos:
+Logo após, os seguintes comandos:
 
 <code>npm install -g serve</code>
 
