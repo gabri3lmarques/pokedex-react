@@ -17,7 +17,7 @@ const Card = ({ pokemon }) => {
         <div className="image">
           <img
             src={pokemon.sprite}
-            alt={`avatar do pokemon ${pokemon.name}.`}
+            alt={`avatar of the pokemon ${pokemon.name}.`}
           />
         </div>
       </div>
