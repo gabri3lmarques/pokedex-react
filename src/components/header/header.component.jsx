@@ -14,10 +14,18 @@ const Header = (props) => {
           />
         </div>
         <div className="right-col">
-          <button onClick={() => props.orderBy("name", "asc")}>a+</button>
-          <button onClick={() => props.orderBy("name", "desc")}>z-</button>
-          <button onClick={() => props.orderBy("number", "asc")}>n+</button>
-          <button onClick={() => props.orderBy("number", "desc")}>n-</button>
+          <button name="order" onClick={() => props.orderBy("name", "asc")}>
+            a+
+          </button>
+          <button name="order" onClick={() => props.orderBy("name", "desc")}>
+            z-
+          </button>
+          <button name="order" onClick={() => props.orderBy("number", "asc")}>
+            n+
+          </button>
+          <button name="order" onClick={() => props.orderBy("number", "desc")}>
+            n-
+          </button>
         </div>
       </div>
     </div>

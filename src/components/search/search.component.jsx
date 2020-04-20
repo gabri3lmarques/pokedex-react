@@ -5,6 +5,7 @@ import "./search.style.css";
 const Search = (props) => {
   return (
     <input
+      name="pokemon"
       onChange={props.searchByName}
       type="text"
       className="search"

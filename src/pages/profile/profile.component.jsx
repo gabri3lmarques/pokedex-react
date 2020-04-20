@@ -16,15 +16,12 @@ class Profile extends React.Component {
     };
   }
 
-  // faz a chamada que busca os dados individual de um determinao pokemon
   componentDidMount() {
     fetch(`${URI}${this.props.match.params.number}/data.json`)
       .then((response) => response.json())
       .then((response) => this.setState({ pokemon: response }));
   }
 
-  //pega o ultimo valor da prop isOpen
-  //redefine essa prop pelo seu oposto
   toggle = () => {
     this.setState((prevState) => {
       return { isOpen: !prevState.isOpen };
@@ -32,7 +29,6 @@ class Profile extends React.Component {
   };
 
   render() {
-    // cria uma cópia da prop pokemon do estado
     const { pokemon } = this.state;
     return (
       <div className={`profile ${pokemon.type ? pokemon.type[0] : ""}`}>
