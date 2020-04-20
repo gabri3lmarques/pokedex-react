@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../card/card.component";
+import propTypes from "prop-types";
 import "./cards-list.style.css";
 
 const CardsList = ({ pokemons }) => {
@@ -10,6 +11,10 @@ const CardsList = ({ pokemons }) => {
       ))}
     </div>
   );
+};
+
+CardsList.propTypes = {
+  pokemons: propTypes.array,
 };
 
 export default CardsList;

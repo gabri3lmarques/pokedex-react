@@ -1,5 +1,6 @@
 import React from "react";
 import Search from "../search/search.component";
+import propTypes from "prop-types";
 import "./header.style.css";
 
 const Header = (props) => {
@@ -26,6 +27,13 @@ const Header = (props) => {
       </div>
     </div>
   );
+};
+
+Header.propTypes = {
+  sortByA: propTypes.func,
+  sortByZ: propTypes.func,
+  sortBySmallNumber: propTypes.func,
+  sortByBigNumber: propTypes.func,
 };
 
 export default Header;

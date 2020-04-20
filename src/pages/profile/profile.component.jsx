@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Button from "../../components/button/button.component";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
+import propTypes from "prop-types";
 import "./profile.style.css";
 
 class Profile extends React.Component {
@@ -157,4 +158,10 @@ class Profile extends React.Component {
     );
   }
 }
+
+Profile.propTypes = {
+  pokemon: propTypes.object,
+  isOpen: propTypes.bool,
+};
+
 export default Profile;

@@ -1,4 +1,5 @@
 import React from "react";
+import propTypes from "prop-types";
 import "./search.style.css";
 
 const Search = (props) => {
@@ -10,6 +11,11 @@ const Search = (props) => {
       placeholder={props.placeholder}
     />
   );
+};
+
+Search.propTypes = {
+  searchByName: propTypes.func,
+  placeholder: propTypes.string,
 };
 
 export default Search;

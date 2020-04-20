@@ -7,7 +7,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App">
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={() => <Home nome={1} />} />
       <Route path="/profile/:number" component={Profile} />
     </div>
   );

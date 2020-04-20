@@ -1,6 +1,7 @@
 import React from "react";
 import CardsList from "../../components/cards-list/cards-list.component";
 import Header from "../../components/header/header.component";
+import propTypes from "prop-types";
 import "./home.style.css";
 
 class Home extends React.Component {
@@ -66,6 +67,7 @@ class Home extends React.Component {
   };
 
   render() {
+    console.log(propTypes);
     // cria duas constantes cópias do estado aplicação
     const { pokemons, searchWord } = this.state;
 
@@ -81,6 +83,7 @@ class Home extends React.Component {
         <div className="container">
           <CardsList pokemons={filteredByName} />
         </div>
+        <p>{this.props.nome}</p>
         <Header
           searchByName={this.searchByName}
           sortByA={this.sortByA}
@@ -92,5 +95,10 @@ class Home extends React.Component {
     );
   }
 }
+
+Home.propTypes = {
+  pokemons: propTypes.array,
+  searchWord: propTypes.string,
+};
 
 export default Home;

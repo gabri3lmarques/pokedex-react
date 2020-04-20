@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../button/button.component";
+import propTypes from "prop-types";
 import "./card.style.css";
 
 const Card = ({ pokemon }) => {
@@ -11,7 +12,7 @@ const Card = ({ pokemon }) => {
       <div className="image-detalis">
         <div className="button">
           <Link to={`/profile/${pokemon.number}`}>
-            <Button text="Details" />
+            <Button text="detalis" />
           </Link>
         </div>
         <div className="image">
@@ -23,6 +24,10 @@ const Card = ({ pokemon }) => {
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  pokemon: propTypes.object,
 };
 
 export default Card;
