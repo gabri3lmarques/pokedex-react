@@ -21,6 +21,10 @@ class Home extends React.Component {
       .then((response) => this.setState({ pokemons: response }));
   }
 
+  searchByName = (e) => {
+    this.setState({ searchWord: e.target.value });
+  };
+
   setPokemons(pokemons) {
     this.setState({ ...this.state, pokemons });
   }
