@@ -132,6 +132,10 @@
   height: 30px;
 }
 
+.profile .card-body .abilitie b {
+  margin-right: 5px;
+}
+
 .profile .card-body > .genders > span.female {
   background-image: url(../../assets/img/female.png);
 }

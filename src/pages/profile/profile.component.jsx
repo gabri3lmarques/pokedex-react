@@ -78,15 +78,15 @@ class Profile extends React.Component {
                     variant="link"
                     eventKey="1"
                   >
-                    Abilities
+                    Special Ability
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="1">
                   <Card.Body>
-                    {pokemon.abilities ? (
-                      <p>
-                        <b>{pokemon.abilities[0]}:</b>
-                        {pokemon.abilities[1]}
+                    {pokemon.specialAbility ? (
+                      <p className="abilitie">
+                        <b>{pokemon.specialAbility[0]}:</b>
+                        {pokemon.specialAbility[1]}
                       </p>
                     ) : (
                       ""
