@@ -6,9 +6,19 @@ Também é necessário ter o node package manager, NPM, pra baixar as dependênc
 
 pode ser baiaxado aqui: [https://nodejs.org/en/]
 
+### Baixando as dependências
+
+Para rodar o projeto localmente você precisa instalar os pacotes npm que são dependências do mesmo.
+
+para isso, navegue até a pasta raiz (nesse caso é a pokedex-react) do projeto através do seu terminal ou cmd, no windows, e em seguida digite o comando abaixo:
+
+<code>npm install</code>
+
+Pronto, você já possui todos as bibliotécas necessárias para rodar o projeto.
+
 ### Rodando versão de desenvolvimento
 
-Para rodar a versão de desenvolvimento do projeto, acesse a pasta raiz através de um terminal ou cmd no windows e rode o comando:
+Para rodar a versão de desenvolvimento acesse a pasta raiz através de um terminal ou cmd, no windows, e digite o seguinte comando:
 
 <code>npm start</code>
 
@@ -16,13 +26,17 @@ Para rodar a versão de desenvolvimento do projeto, acesse a pasta raiz através
 
 Para rodar a versão de produção em um servidor local, no terminal, digite os seguintes comandos:
 
-Para buildar o projeto:
+Primeiro é necessário criar a build do projeto com o seguinte comado:
 
 <code>npm run build</code>
 
-Logo após, os seguintes comandos:
+Agora precisamos instalar <i>serve</i>,caso você não o tenha, esse pacote não está incluso nas dependências do projeto pois ele é opcional, existem outras formas de fazer essa tarefa.
+
+Mas caso você não o tenha ainda, digite o comando abaixo no seu terminal:
 
 <code>npm install -g serve</code>
+
+Pronto, agora é só rodar o projeto localmente através do comando abaixo:
 
 <code>serve -s build</code>
 
@@ -36,4 +50,4 @@ para testar a aplicação, na pasta raiz, no terminal, rode o comando:
 
 O resultado final do projeto pode ser acessado atavés da seguinte url:
 
-[https://pokedex-57462.web.app/]
+[https://pokedex-react-c6070.web.app/]
