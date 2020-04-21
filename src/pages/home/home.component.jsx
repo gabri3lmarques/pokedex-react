@@ -4,7 +4,6 @@ import CardsList from "../../components/cards-list/cards-list.component";
 import Header from "../../components/header/header.component";
 import propTypes from "prop-types";
 import _ from "lodash";
-import "./home.style.css";
 
 class Home extends React.Component {
   constructor(props) {
@@ -40,7 +39,7 @@ class Home extends React.Component {
     );
 
     return (
-      <div className="App">
+      <div>
         <div className="container">
           <CardsList pokemons={filteredByName} />
         </div>
