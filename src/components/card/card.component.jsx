@@ -12,7 +12,7 @@ const Card = ({ pokemon }) => {
       <div className="image-detalis">
         <div className="button">
           <Link to={`/profile/${pokemon.number}`}>
-            <Button text="detalis" />
+            <Button text="see more" />
           </Link>
         </div>
         <div className="image">
